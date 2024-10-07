@@ -1,0 +1,17 @@
+.body{
+    align-items: center;
+}
+
+.test-button{
+    font-size: 40px;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 2px;
+    border-color: black;
+    border-radius: 7px;
+    margin: 50px;
+}
+
+.test-button:hover{
+    background-color:cornflowerblue;
+}
