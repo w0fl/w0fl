@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nico</title>
+    <title>Student Information Form</title>
     <link rel="stylesheet" href="index_styles.css">
 </head>
 <body>
-    <a href=""><button class="test-button">Click</button></a>
+    <div class="container">
+        <h2>Studenten Informations Übersicht</h2>
+        <form action="#" method="POST" class="form-layout">
+            <section class="form-section">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required>
+
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <label for="studiengang">Studiengang:</label>
+                <input type="text" id="studiengang" name="studiengang" required>
+
+                <label for="matrikelnummer">Matrikelnummer:</label>
+                <input type="text" id="matrikelnummer" name="matrikelnummer" required>
+
+                <label for="familienstand">Familienstand:</label>
+                <input type="text" id="familienstand" name="familienstand">
+
+                <label for="geburtsdatum">Geburtsdatum:</label>
+                <input type="date" id="geburtsdatum" name="geburtsdatum" required>
+
+                <label for="geburtsort">Geburtsort:</label>
+                <input type="text" id="geburtsort" name="geburtsort" required>
+
+                <label for="semesterart">Semester:</label>
+                <select id="semesterart" name="semesterart">
+                    <option value="semester">Semester</option>
+                    <option value="fachsemester">Fachsemester</option>
+                </select>
+
+                <label for="einschreibedatum">Einschreibedatum:</label>
+                <input type="date" id="einschreibedatum" name="einschreibedatum" required>
+
+                <label for="exmatrikulationsdatum">Exmatrikulationsdatum:</label>
+                <input type="date" id="exmatrikulationsdatum" name="exmatrikulationsdatum">
+            </section>
+            
+            <section class="form-section">
+                <label for="faecher">Liste eingeschriebene Fächer:</label>
+                <textarea id="faecher" name="faecher" rows="4"></textarea>
+            </section>
+            
+            <section class="form-section">
+                <h3>Praktikum</h3>
+
+                <label for="praktikum_unternehmen">Praktikumsunternehmen:</label>
+                <input type="text" id="praktikum_unternehmen" name="praktikum_unternehmen">
+
+                <label for="praktikum_ansprechpartner">Ansprechpartner:</label>
+                <input type="text" id="praktikum_ansprechpartner" name="praktikum_ansprechpartner">
+
+                <label for="praktikum_adresse">Adresse:</label>
+                <input type="text" id="praktikum_adresse" name="praktikum_adresse">
+
+                    <h3>Auslandssemester</h3>
+
+                    <label for="universitaet">Universität:</label>
+                    <input type="text" id="universitaet" name="universitaet">
+    
+                    <label for="auslandsadresse">Anschrift:</label>
+                    <input type="text" id="auslandsadresse" name="auslandsadresse">
+    
+                    <label for="ansprechpartner_ausland">Ansprechpartner:</label>
+                    <input type="text" id="ansprechpartner_ausland" name="ansprechpartner_ausland">
+    
+                    <label for="anfangsdatum_ausland">Anfangsdatum:</label>
+                    <input type="date" id="anfangsdatum_ausland" name="anfangsdatum_ausland">
+    
+                    <label for="enddatum_ausland">Enddatum:</label>
+                    <input type="date" id="enddatum_ausland" name="enddatum_ausland">    
+
+                    <h3>Status:</h3>
+                <select id="status" name="status">
+                    <option value="aktiv">Aktiv</option>
+                    <option value="inaktiv">Inaktiv</option>
+                    <option value="urlaubssemester">Urlaubssemester</option>
+                </select>
+                
+            </section>
+        </form>
+        <button type="submit" class="submit-button">Absenden</button>
+    </div>
 </body>
 </html>
