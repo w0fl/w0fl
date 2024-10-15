@@ -84,3 +84,16 @@ form textarea{
 .submit-button:hover {
     background-color: #218838;
 }
+
+.output-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.output-section h3 {
+    margin-bottom: 15px;
+}
+.output-data {
+    margin-bottom: 10px;
+}

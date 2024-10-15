@@ -91,7 +91,59 @@
                 
             </section>
         </form>
-        <button type="submit" class="submit-button">Absenden</button>
+        <button type="submit" class="submit-button" onclick="updateOutput()">Absenden</button>
     </div>
+
+     <!-- Output Section -->
+     <div class="output-section" id="outputSection">
+        <h3>Ausgefüllte Informationen:</h3>
+        <div class="output-data" id="output-name"></div>
+        <div class="output-data" id="output-vorname"></div>
+        <div class="output-data" id="output-adresse"></div>
+        <div class="output-data" id="output-studiengang"></div>
+        <div class="output-data" id="output-matrikelnummer"></div>
+        <div class="output-data" id="output-familienstand"></div>
+        <div class="output-data" id="output-geburtsdatum"></div>
+        <div class="output-data" id="output-geburtsort"></div>
+        <div class="output-data" id="output-semesterart"></div>
+        <div class="output-data" id="output-martikulationsdatum"></div>
+        <div class="output-data" id="output-faecher"></div>
+        <div class="output-data" id="output-praktikum"></div>
+        <div class="output-data" id="output-ausland"></div>
+        <div class="output-data" id="output-status"></div>
+    </div>
+</div>
+
+<script>
+    function updateOutput() {
+        // Capture form values
+        document.getElementById('output-name').innerText = 'Name: ' + document.getElementById('name').value;
+        document.getElementById('output-vorname').innerText = 'Vorname: ' + document.getElementById('vorname').value;
+        document.getElementById('output-adresse').innerText = 'Adresse: ' + document.getElementById('adresse').value;
+        document.getElementById('output-studiengang').innerText = 'Studiengang: ' + document.getElementById('studiengang').value;
+        document.getElementById('output-matrikelnummer').innerText = 'Matrikelnummer: ' + document.getElementById('matrikelnummer').value;
+        document.getElementById('output-familienstand').innerText = 'Familienstand: ' + document.getElementById('familienstand').value;
+        document.getElementById('output-geburtsdatum').innerText = 'Geburtsdatum: ' + document.getElementById('geburtsdatum').value;
+        document.getElementById('output-geburtsort').innerText = 'Geburtsort: ' + document.getElementById('geburtsort').value;
+        document.getElementById('output-semesterart').innerText = 'Semesterart: ' + document.getElementById('semesterart').value;
+        document.getElementById('output-martikulationsdatum').innerText = 'Matrikuliert (von, bis): ' + document.getElementById('einschreibedatum').value + ' - ' + document.getElementById('exmatrikulationsdatum').value;
+        document.getElementById('output-faecher').innerText = 'Eingeschriebene Fächer: ' + document.getElementById('faecher').value;
+
+        // Praktikum
+        let praktikum = document.getElementById('praktikum_unternehmen').value;
+        if (praktikum) {
+            document.getElementById('output-praktikum').innerText = 'Praktikum: ' + praktikum;
+        }
+
+        // Ausland
+        let ausland = document.getElementById('universitaet').value;
+        if (ausland) {
+            document.getElementById('output-ausland').innerText = 'Auslandssemester: ' + ausland;
+        }
+
+        // Status
+        document.getElementById('output-status').innerText = 'Status: ' + document.getElementById('status').value;
+    }
+</script>
 </body>
 </html>
