@@ -3,8 +3,6 @@
 - 👀 I’m interested in learning all the Stuff on here
 - 🌱 I’m currently studying IT in Germany
 - 💞️ I love building pcs
-- 📫 Find me on Twitter @probablyWofl
-- 😄 Pronouns: he/him
 - ⚡ Fun fact: ...
 
 <!---
